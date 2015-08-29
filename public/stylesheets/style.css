@@ -1,8 +1,25 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgba(255,255,255,0.5);
+  text-shadow: 
+  color: white;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+
 }
+
+/* font-family: 'Quicksand', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poiret One', cursive; */
 
 a {
   color: #00B7FF;
+}
+
+html {
+  background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
