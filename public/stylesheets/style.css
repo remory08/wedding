@@ -1,7 +1,11 @@
+h1 {
+  color: white;
+}
+
 body {
   padding: 50px;
-  background-color: rgba(255,255,255,0.5);
-  text-shadow: 
+  background-color: rgba(255,255,255,0.7);
+  text-shadow:
   color: white;
   text-align: center;
   font-family: 'Poiret One', cursive;
@@ -22,4 +26,43 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+p {
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+}
+
+p.brown {
+  margin-top: 30px;
+  color: rgb(103, 95, 77);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  text-indent: 10px;
+}
+
+form {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 3px;
+  border-radius: 3px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+input {
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #00B7FF;
+  color: white;
+}
+
+
+h4 {
+  color: rgb(18, 66, 13);
+  font-size: 30px;
+  font-weight: 700;
 }
