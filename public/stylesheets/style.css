@@ -1,15 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 h1 {
   color: white;
+  font-size: 60px;
 }
 
 body {
-  padding: 50px;
-  background-color: rgba(255,255,255,0.7);
-  text-shadow:
+/*   padding: 50px;
+ */  background-color: rgba(255,255,255,0.7);
   color: white;
   text-align: center;
   font-family: 'Poiret One', cursive;
-
 }
 
 /* font-family: 'Quicksand', sans-serif;
@@ -17,7 +64,10 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Poiret One', cursive; */
 
 a {
-  color: #00B7FF;
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 2px solid white;
 }
 
 html {
@@ -34,13 +84,26 @@ p {
   color: white;
 }
 
-p.brown {
-  margin-top: 30px;
-  color: rgb(103, 95, 77);
-  font-size: 24px;
-  font-weight: 700;
+section {
+  background-color: rgba(103, 95, 77, 0.5);
+  padding: 30px;
+  width: 100%;
+  margin: 5% 0;
+}
+
+h2 {
+  font-size: 32px;
+  color: #00B7FF;
+  text-shadow:1px 1px 1px white;
+}
+
+.brown p {
+  margin: 30px 20px;
+  font-size: 18px;
+  font-weight: 500;
   text-align: left;
-  text-indent: 10px;
+  line-height: 2.0;
+  text-indent: 30px hanging;
 }
 
 form {
@@ -48,12 +111,14 @@ form {
   border-radius: 3px;
   border-radius: 3px;
   width: 50%;
-  margin-left: 25%;
+  margin: 10% 25%;
+  padding: 30px;
+  color: rgb(18, 66, 13);
 }
 
 input {
   border: none;
-  margin: 10px;
+  margin: 20px 10px;
   padding: 10px;
   border-radius: 5px;
   background-color: #00B7FF;
@@ -65,4 +130,9 @@ h4 {
   color: rgb(18, 66, 13);
   font-size: 30px;
   font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.timbutt {
+  width: 100%;
 }
