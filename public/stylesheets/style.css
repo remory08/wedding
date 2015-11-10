@@ -82,6 +82,8 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	letter-spacing: 2px;
+	font-weight: 600;
 }
 
 p {
@@ -95,6 +97,23 @@ section {
   padding: 30px;
   width: 100%;
   margin: 5% 0;
+}
+
+table {
+	background-color: rgba(103, 95, 77, 0.5);
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 50px;
+	padding: 30px;
+}
+
+td {
+	padding: 30px;
+	border-bottom: 1px solid white;
+}
+
+th {
+	font-size: 24px;
 }
 
 h2 {
@@ -141,4 +160,14 @@ h4 {
 
 .timbutt {
   width: 100%;
+}
+
+.left {
+	float: left;
+	margin: 10px;
+	border-bottom: none;
+}
+
+.left:hover {
+	border: none;
 }
