@@ -58,6 +58,7 @@ body {
   text-align: center;
   font-family: 'Poiret One', cursive;
   font-weight: 500;
+	box-sizing: border-box;
 }
 
 /* font-family: 'Quicksand', sans-serif;
@@ -131,7 +132,7 @@ h2 {
   text-indent: 30px hanging;
 }
 
-form {
+/* form {
   background-color: rgba(255,255,255,0.7);
   border-radius: 3px;
   border-radius: 3px;
@@ -139,7 +140,7 @@ form {
   margin: 10% 25%;
   padding: 30px;
   color: rgb(18, 66, 13);
-}
+} */
 
 input {
   border: none;
@@ -170,4 +171,37 @@ h4 {
 
 .left:hover {
 	border: none;
+}
+
+.block {
+	width: 18%;
+	float: left;
+	margin-left: 2%;
+	line-height: 1.5;
+	border-radius: 5px;
+	height: 200px;
+	padding: 30px;
+	background-color: rgba(81, 94, 7, 0.5);
+	margin-bottom: 20px;
+}
+
+.block p {
+	font-size: 20px;
+	font-style: italic;
+}
+
+.block h3 {
+	font-size: 25px;
+	border-bottom: 3px solid white;
+}
+
+.eform {
+	clear: both;
+	margin-top: 20px;
+}
+
+nav a {
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding-left: 10px;
 }
