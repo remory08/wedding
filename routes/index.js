@@ -18,8 +18,8 @@ router.get('/todo', function(req, res, next) {
   res.render('todo', {});
 })
 
-router.get('/getting', function(req, res, next) {
-  res.render('getting', {});
+router.get('/registry', function(req, res, next) {
+  res.render('registry', {});
 })
 
 module.exports = router;
