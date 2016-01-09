@@ -78,11 +78,6 @@ a:hover {
 }
 
 html {
-  background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 	letter-spacing: 2px;
 	font-weight: 600;
 }
@@ -98,7 +93,7 @@ p {
   padding: 100px;
   width: 100%;
 	position: relative;
-	top: 51px;
+	top: 168px;
 }
 
 table {
@@ -133,16 +128,6 @@ h2 {
   text-indent: 30px hanging;
 }
 
-/* form {
-  background-color: rgba(255,255,255,0.7);
-  border-radius: 3px;
-  border-radius: 3px;
-  width: 50%;
-  margin: 10% 25%;
-  padding: 30px;
-  color: rgb(18, 66, 13);
-} */
-
 input {
   border: none;
   margin: 20px 10px;
@@ -157,13 +142,13 @@ h4 {
   color: rgb(18, 66, 13);
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 30px;
 }
 
 .timbutt {
 	background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed;
   width: 100%;
-	height: 300px;
+	height: 600px;
+	margin-bottom: 0;
 }
 
 .left {
@@ -274,4 +259,19 @@ section {
 
 .brown a {
 	float: left;
+}
+
+.ptarmigan {
+	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
+  width: 100%;
+	height: 1000px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.veil {
+	background-color: rgba(255,255,255,0.5);
 }
