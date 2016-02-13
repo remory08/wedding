@@ -46,6 +46,25 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* end of reset*/
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+
 h1 {
   color: white;
   font-size: 60px;
@@ -58,7 +77,6 @@ body {
   text-align: center;
   font-family: 'Poiret One', cursive;
   font-weight: 500;
-	box-sizing: border-box;
 }
 
 /* font-family: 'Quicksand', sans-serif;
@@ -126,6 +144,10 @@ h2 {
   text-align: left;
   line-height: 2.0;
   text-indent: 30px hanging;
+}
+
+.brown a {
+
 }
 
 input {
@@ -257,10 +279,6 @@ section {
 	top: -50px;
 }
 
-.brown a {
-	float: left;
-}
-
 .ptarmigan {
 	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
   width: 100%;
@@ -274,4 +292,118 @@ html, body {
 
 .veil {
 	background-color: rgba(255,255,255,0.5);
+	width: 100%;
+	height: 100%;
 }
+
+header {
+	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
+	width: 100%;
+	height: 100px;
+}
+
+.ttd h5 {
+	font-size: 24px;
+	color: rgb(103, 95, 77);
+	margin-bottom: 10px;
+}
+
+.ttd p {
+	font-size: 14px;
+	color: rgb(103, 95, 77);
+	line-height: 1.5;
+	text-align: left;
+}
+div.ttd.one {
+	float: left;
+	width: 50%;
+	height: 380px;
+	margin: 0;
+	padding: 20px;
+}
+div.ttd.one a, div.ttd.four a{
+	color: rgb(81, 94, 7);
+}
+div.ttd.one li, div.ttd.four li{
+	margin: 15px;
+}
+
+div.ttd.two {
+	background-color: rgb(81, 94, 7);
+	float: right;
+	width: 50%;
+	height: 380px;
+}
+div.ttd.two img {
+	width: auto;
+}
+div.ttd.three {
+	float: left;
+	width: 52%;
+	height: 410px;
+	margin: 0;
+}
+.three img {
+	float: left;
+}
+div.ttd.four {
+	padding: 20px;
+	float: right;
+	width: 48%;
+	height: 410px;
+	margin: 0;
+}
+div.ttd.five {
+	clear: both;
+	width: 100%;
+	background-color: rgb(81, 94, 7);
+	height: 200px;
+	padding: 20px;
+}
+div.ttd.five p {
+	color: white;
+	text-align: center;
+	margin-bottom: 50px;
+}
+div.ttd.five h5 {
+	color: white;
+	text-align: center;
+}
+
+div.ttd.five a {
+	margin: 30px;
+}
+i {
+	font-size: 24px !important;
+}
+
+/* Cabins styles */
+.cabins p {
+	color: #00B7FF;
+	text-align: left;
+	padding: 2%;
+	margin: 0 9%;
+	font-size: 20px;
+	line-height: 1.7;
+	font-weight: bold;
+}
+
+.cabins a {
+	color: rgb(191, 88, 172);
+	font-weight: bold;
+}
+
+.cabins {
+	width: 60%;
+	float: left;
+}
+
+.avalanche {
+	width: 40%;
+	float: left;
+}
+
+
+/* .cabins {
+	background: url("http://thoughtandsight.com/wp-content/uploads/2013/11/barn1.jpg") no-repeat center center fixed;
+} */
