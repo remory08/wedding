@@ -1,0 +1,98 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+	letter-spacing: 2px;
+	font-weight: 600;
+
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+  /*   padding: 50px;
+ */  background-color: rgba(255,255,255,0.5);
+  color: white;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: 500;
+}
+
+header {
+	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
+	width: 100%;
+	height: 100px;
+}
+
+section {
+	clear: both;
+	margin-bottom: 50px;
+}
+
+/* Brown Section of Navigation Items */
+.brown p {
+  margin: 30px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.0;
+  text-indent: 30px hanging;
+}
+
+.brown {
+  background-color: rgb(103, 95, 77);
+  padding: 100px;
+  width: 100%;
+	position: relative;
+	top: 168px;
+}
+
+.timbutt {
+	background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed;
+  width: 100%;
+	height: 600px;
+	margin-bottom: 0;
+}
+
+.ptarmigan {
+	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
+  width: 100%;
+	height: 1000px;
+}
+
+.veil {
+	background-color: rgba(255,255,255,0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.left {
+	float: left;
+	margin: 10px;
+	border-bottom: none;
+}
+
+.left:hover {
+	border: none;
+}
+
+table {
+	background-color: rgba(103, 95, 77, 0.5);
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 50px;
+	padding: 30px;
+}
+
+td {
+	padding: 30px;
+	border-bottom: 1px solid white;
+}
+
+th {
+	font-size: 24px;
+}

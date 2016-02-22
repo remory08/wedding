@@ -1,0 +1,76 @@
+/* Things To Do Styles */
+
+.ttd h5 {
+	font-size: 24px;
+	color: rgb(103, 95, 77);
+	margin-bottom: 10px;
+}
+
+.ttd p {
+	font-size: 14px;
+	color: rgb(103, 95, 77);
+	line-height: 1.5;
+	text-align: left;
+}
+div.ttd.one {
+	float: left;
+	width: 50%;
+	height: 380px;
+	margin: 0;
+	padding: 20px;
+}
+div.ttd.one a, div.ttd.four a{
+	color: rgb(81, 94, 7);
+}
+div.ttd.one li, div.ttd.four li{
+	margin: 15px;
+}
+
+div.ttd.two {
+	background-color: rgb(81, 94, 7);
+	float: right;
+	width: 50%;
+	height: 380px;
+}
+div.ttd.two img {
+	width: auto;
+}
+div.ttd.three {
+	float: left;
+	width: 52%;
+	height: 410px;
+	margin: 0;
+}
+.three img {
+	float: left;
+}
+div.ttd.four {
+	padding: 20px;
+	float: right;
+	width: 48%;
+	height: 410px;
+	margin: 0;
+}
+div.ttd.five {
+	clear: both;
+	width: 100%;
+	background-color: rgb(81, 94, 7);
+	height: 200px;
+	padding: 20px;
+}
+div.ttd.five p {
+	color: white;
+	text-align: center;
+	margin-bottom: 50px;
+}
+div.ttd.five h5 {
+	color: white;
+	text-align: center;
+}
+
+div.ttd.five a {
+	margin: 30px;
+}
+i {
+	font-size: 24px !important;
+}
