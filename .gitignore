@@ -30,7 +30,3 @@ node_modules
 npm-debug.log
 
 .env
-
-.sass-cache
-
-public/stylesheets/style.css.map
