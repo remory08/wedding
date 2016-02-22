@@ -1,0 +1,16 @@
+<table class="all">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Rehearsal</th>
+    <th>Wedding</th>
+  </tr>
+  {{#each guests}}
+  <tr>
+    <td>{{guest_first_name}}</td>
+    <td>{{guest_last_name}}</td>
+    <td>{{rehearsal_rsvp}}</td>
+    <td>{{wedding_rsvp}}</td>
+  </tr>
+  {{/each}}
+</table>

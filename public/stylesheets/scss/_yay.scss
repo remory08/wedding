@@ -1,0 +1,63 @@
+.guest p {
+	color: rgb(191, 88, 172);
+	margin-bottom: 30px;
+}
+
+.guest a {
+	color: black;
+}
+
+.guest button {
+		background-color: rgb(191, 88, 172);
+		font-size: 20px;
+		text-align: center;
+		border: none;
+
+		&:hover {
+			background-color: #00B7FF;
+			color: white;
+		}
+		a {
+			border: none;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+
+/* RSVP success form, yay, styles */
+.yay {
+	button {
+			background-color: rgb(191, 88, 172);
+			font-size: 20px;
+			text-align: center;
+			border: none;
+
+			&:hover {
+				background-color: #00B7FF;
+				color: white;
+			}
+			a {
+				border: none;
+				&:hover {
+					color: white;
+				}
+			}
+	}
+	h1 {
+	color: black;
+	margin-bottom: 20px;
+	}
+	i {
+		color: black;
+		float: left;
+	}
+}
+
+.yay p {
+	color: rgb(191, 88, 172);
+}
+
+.yay button {
+	color: black;
+}

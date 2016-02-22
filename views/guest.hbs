@@ -1,0 +1,10 @@
+{{#if guest}}
+<div class="guest">
+    <p> Zoink! {{guest.guest_full_name}} has already RSVP'd</p>
+  <p>
+    Please choose an option:
+  </p>
+  <button type="button" name="button"><a href="/users">RSVP for Someone Else </a></button>
+  <button type="button" name="button"><a href="/">Return Home</a></button>
+</div>
+{{/if}}
