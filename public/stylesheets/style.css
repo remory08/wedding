@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,139 +15,295 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
+  content: '';
+  content: none; }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 /* end of reset*/
-
-
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 .clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-	}
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
 
-h1 {
-  color: white;
-  font-size: 60px;
-}
+/* RSVP Form Styles */
+h1.rsvp {
+  display: inline-block;
+  color: black; }
 
-body {
-/*   padding: 50px;
- */  background-color: rgba(255,255,255,0.5);
+h2.rsvp {
+  margin-top: 20px; }
+
+img.rsvp {
+  display: block;
+  width: 50%;
+  margin-left: 25%; }
+
+a.rsvp {
+  color: black;
+  float: left; }
+
+form.rsvp {
+  padding: 5%;
+  width: 60%;
+  margin-left: 20%; }
+  form.rsvp input, form.rsvp .guest_form input {
+    background-color: white;
+    width: 200px;
+    border-radius: 0;
+    color: black;
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+    border-bottom: 2px solid black; }
+  form.rsvp input[type='submit'] {
+    background-color: #bf58ac;
+    font-size: 20px;
+    text-align: center;
+    border: none; }
+    form.rsvp input[type='submit']:hover {
+      background-color: #00B7FF;
+      color: white; }
+  form.rsvp label, form.rsvp .guest_form label {
+    color: black;
+    font-size: 18px; }
+  form.rsvp h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    border: 3px solid #bf58ac;
+    padding: 5px; }
+  form.rsvp p {
+    color: #bf58ac;
+    font-size: 16px;
+    margin: 3%;
+    text-align: center; }
+
+/* Cabins styles */
+.cabins p {
+  color: #00B7FF;
+  text-align: left;
+  padding: 2%;
+  margin: 0 9%;
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: bold; }
+
+.cabins a {
+  color: #bf58ac;
+  font-weight: bold; }
+
+.cabins {
+  width: 60%;
+  float: left; }
+
+.avalanche {
+  width: 40%;
+  float: left; }
+
+/* Things To Do Styles */
+.ttd h5 {
+  font-size: 24px;
+  color: #675f4d;
+  margin-bottom: 10px; }
+
+.ttd p {
+  font-size: 14px;
+  color: #675f4d;
+  line-height: 1.5;
+  text-align: left; }
+
+div.ttd.one {
+  float: left;
+  width: 50%;
+  height: 380px;
+  margin: 0;
+  padding: 20px; }
+
+div.ttd.one a, div.ttd.four a {
+  color: #515e07; }
+
+div.ttd.one li, div.ttd.four li {
+  margin: 15px; }
+
+div.ttd.two {
+  background-color: #515e07;
+  float: right;
+  width: 50%;
+  height: 380px; }
+
+div.ttd.two img {
+  width: auto; }
+
+div.ttd.three {
+  float: left;
+  width: 52%;
+  height: 410px;
+  margin: 0; }
+
+.three img {
+  float: left; }
+
+div.ttd.four {
+  padding: 20px;
+  float: right;
+  width: 48%;
+  height: 410px;
+  margin: 0; }
+
+div.ttd.five {
+  clear: both;
+  width: 100%;
+  background-color: #515e07;
+  height: 200px;
+  padding: 20px; }
+
+div.ttd.five p {
   color: white;
   text-align: center;
-  font-family: 'Poiret One', cursive;
-  font-weight: 500;
-}
+  margin-bottom: 50px; }
 
-/* font-family: 'Quicksand', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Poiret One', cursive; */
-
-a {
+div.ttd.five h5 {
   color: white;
-  font-weight: 800;
-  text-decoration: none;
-  border-bottom: 2px solid white;
-}
+  text-align: center; }
 
-a:hover {
-  color: #00B7FF;
-  border-bottom: 2px solid #00B7FF;
-}
+div.ttd.five a {
+  margin: 30px; }
 
-html {
-	letter-spacing: 2px;
-	font-weight: 600;
-}
+i {
+  font-size: 24px !important; }
 
-p {
-  font-size: 30px;
-  font-weight: 400;
-  color: white;
-}
+.block {
+  width: 22%;
+  float: left;
+  margin-left: 2%;
+  line-height: 1.5;
+  border: 10px solid white;
+  border-radius: 5px;
+  height: 250px;
+  padding: 20px;
+  background-color: rgba(81, 94, 7, 0.7);
+  margin-bottom: 20px;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  margin-bottom: 70px; }
+  .block.flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+  .block .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .block div.back p {
+    margin-top: -50px;
+    margin-bottom: 20px; }
+  .block p {
+    font-size: 20px;
+    font-style: italic; }
+  .block h3 {
+    font-size: 25px; }
+    .block h3.front {
+      margin-top: 61px;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden; }
+  .block.card2.flipped div.back p {
+    margin-top: -136px; }
+  .block.card1.flipped div.back p {
+    margin-top: -74px; }
 
-.brown {
-  background-color: rgb(103, 95, 77);
-  padding: 100px;
-  width: 100%;
-	position: relative;
-	top: 168px;
-}
+/* Hidden  All Page for checking RSVPs styles */
+.all p {
+  color: green; }
 
-table {
-	background-color: rgba(103, 95, 77, 0.5);
-	width: 60%;
-	margin-left: 20%;
-	margin-top: 50px;
-	padding: 30px;
-}
+.guest p {
+  color: #bf58ac;
+  margin-bottom: 30px; }
 
-td {
-	padding: 30px;
-	border-bottom: 1px solid white;
-}
+.guest a {
+  color: black; }
 
-th {
-	font-size: 24px;
-}
+.guest button {
+  background-color: #bf58ac;
+  font-size: 20px;
+  text-align: center;
+  border: none; }
+  .guest button:hover {
+    background-color: #00B7FF;
+    color: white; }
+  .guest button a {
+    border: none; }
+    .guest button a:hover {
+      color: white; }
 
-h2 {
-  font-size: 32px;
-  color: #00B7FF;
-  text-shadow:1px 1px 1px white;
-}
+/* RSVP success form, yay, styles */
+.yay button {
+  background-color: #bf58ac;
+  font-size: 20px;
+  text-align: center;
+  border: none; }
+  .yay button:hover {
+    background-color: #00B7FF;
+    color: white; }
+  .yay button a {
+    border: none; }
+    .yay button a:hover {
+      color: white; }
+.yay h1 {
+  color: black;
+  margin-bottom: 20px; }
+.yay i {
+  color: black;
+  float: left; }
 
-.brown p {
-  margin: 30px 20px;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: left;
-  line-height: 2.0;
-  text-indent: 30px hanging;
-}
+.yay p {
+  color: #bf58ac; }
 
-.brown a {
-
-}
+.yay button {
+  color: black; }
 
 input {
   border: none;
@@ -156,254 +311,140 @@ input {
   padding: 10px;
   border-radius: 5px;
   background-color: #00B7FF;
-  color: white;
-}
-
-
-h4 {
-  color: rgb(18, 66, 13);
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.timbutt {
-	background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed;
-  width: 100%;
-	height: 600px;
-	margin-bottom: 0;
-}
-
-.left {
-	float: left;
-	margin: 10px;
-	border-bottom: none;
-}
-
-.left:hover {
-	border: none;
-}
-
-.block {
-	box-sizing: border-box;
-	width: 22%;
-	float: left;
-	margin-left: 2%;
-	line-height: 1.5;
-	border: 10px solid white;
-	border-radius: 5px;
-	height: 250px;
-	padding: 20px;
-	background-color: rgba(81, 94, 7, 0.7);
-	margin-bottom: 20px;
-	-webkit-transition: -webkit-transform 1s;
-	 -moz-transition: -moz-transform 1s;
-	 -o-transition: -o-transform 1s;
-	 transition: transform 1s;
-	 -webkit-transform-style: preserve-3d;
-	 -moz-transform-style: preserve-3d;
-	 -o-transform-style: preserve-3d;
-	 transform-style: preserve-3d;
-	 -webkit-transform-origin: 50% 50%;
-	 margin-bottom: 70px;
-}
-
-.block p {
-	font-size: 20px;
-	font-style: italic;
-}
-
-.block h3 {
-	font-size: 25px;
-/* 	border-bottom: 3px solid white;
- */}
+  color: white; }
 
 .eform {
-	clear: both;
-	margin-top: 20px;
-}
+  clear: both;
+  margin-top: 20px; }
+
+h1 {
+  color: white;
+  font-size: 60px; }
+
+h2 {
+  font-size: 32px;
+  color: #00B7FF;
+  text-shadow: 1px 1px 1px white; }
+
+h4 {
+  color: #12420d;
+  font-size: 18px;
+  font-weight: 700; }
+
+a {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 2px solid white; }
+
+a:hover {
+  color: #00B7FF;
+  border-bottom: 2px solid #00B7FF; }
 
 nav a {
-	font-size: 20px;
-	letter-spacing: 2px;
-	padding-left: 10px;
-}
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-left: 10px; }
 
-.block .back {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-		-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-.block.flipped {
-    -webkit-transform: rotateY( 180deg );
-    -moz-transform: rotateY( 180deg );
-    -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
-}
-
-h3.front {
-	-webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
--o-backface-visibility: hidden;
-backface-visibility: hidden;
-}
-
-p.back, form.back {
-	margin-top: -96px;
-}
-
-h3.front {
-	margin-top: 61px;
-}
-
-section {
-	clear: both;
-	margin-bottom: 50px;
-}
-
-.megatron {
-	font-size: 100px;
-	padding: 100px 0px;
-	text-shadow: white 1px 1px;
-}
+p {
+  font-size: 30px;
+  font-weight: 400;
+  color: white; }
 
 .pooch {
-	font-size: 30px;
-	font-weight: 800;
-	color: white;
-	position: relative;
-	top: -50px;
-}
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  position: relative;
+  top: -50px; }
 
-.ptarmigan {
-	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
-  width: 100%;
-	height: 1000px;
-}
+.megatron {
+  font-size: 100px;
+  padding: 100px 0px;
+  text-shadow: white 1px 1px; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  font-weight: 600; }
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
+  max-width: 100%;
+  overflow-x: hidden; }
 
-.veil {
-	background-color: rgba(255,255,255,0.5);
-	width: 100%;
-	height: 100%;
-}
+body {
+ /*   padding: 50px;
+*/
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: 500; }
 
 header {
-	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
-	width: 100%;
-	height: 100px;
-}
+  background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
+  width: 100%;
+  height: 100px; }
 
-.ttd h5 {
-	font-size: 24px;
-	color: rgb(103, 95, 77);
-	margin-bottom: 10px;
-}
+section {
+  clear: both;
+  margin-bottom: 50px; }
 
-.ttd p {
-	font-size: 14px;
-	color: rgb(103, 95, 77);
-	line-height: 1.5;
-	text-align: left;
-}
-div.ttd.one {
-	float: left;
-	width: 50%;
-	height: 380px;
-	margin: 0;
-	padding: 20px;
-}
-div.ttd.one a, div.ttd.four a{
-	color: rgb(81, 94, 7);
-}
-div.ttd.one li, div.ttd.four li{
-	margin: 15px;
-}
+/* Brown Section of Navigation Items */
+.brown p {
+  margin: 30px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 2.0;
+  text-indent: 30px hanging; }
 
-div.ttd.two {
-	background-color: rgb(81, 94, 7);
-	float: right;
-	width: 50%;
-	height: 380px;
-}
-div.ttd.two img {
-	width: auto;
-}
-div.ttd.three {
-	float: left;
-	width: 52%;
-	height: 410px;
-	margin: 0;
-}
-.three img {
-	float: left;
-}
-div.ttd.four {
-	padding: 20px;
-	float: right;
-	width: 48%;
-	height: 410px;
-	margin: 0;
-}
-div.ttd.five {
-	clear: both;
-	width: 100%;
-	background-color: rgb(81, 94, 7);
-	height: 200px;
-	padding: 20px;
-}
-div.ttd.five p {
-	color: white;
-	text-align: center;
-	margin-bottom: 50px;
-}
-div.ttd.five h5 {
-	color: white;
-	text-align: center;
-}
+.brown {
+  background-color: #675f4d;
+  padding: 100px;
+  width: 100%;
+  position: relative;
+  top: 168px; }
 
-div.ttd.five a {
-	margin: 30px;
-}
-i {
-	font-size: 24px !important;
-}
+.timbutt {
+  background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 0; }
 
-/* Cabins styles */
-.cabins p {
-	color: #00B7FF;
-	text-align: left;
-	padding: 2%;
-	margin: 0 9%;
-	font-size: 20px;
-	line-height: 1.7;
-	font-weight: bold;
-}
+.ptarmigan {
+  background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
+  width: 100%;
+  height: 1000px; }
 
-.cabins a {
-	color: rgb(191, 88, 172);
-	font-weight: bold;
-}
+.veil {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%; }
 
-.cabins {
-	width: 60%;
-	float: left;
-}
+.left {
+  float: left;
+  margin: 10px;
+  border-bottom: none; }
 
-.avalanche {
-	width: 40%;
-	float: left;
-}
+.left:hover {
+  border: none; }
 
+table {
+  background-color: rgba(103, 95, 77, 0.5);
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 50px;
+  padding: 30px; }
 
-/* .cabins {
-	background: url("http://thoughtandsight.com/wp-content/uploads/2013/11/barn1.jpg") no-repeat center center fixed;
-} */
+td {
+  padding: 30px;
+  border-bottom: 1px solid white; }
+
+th {
+  font-size: 24px; }
+
+/*# sourceMappingURL=style.css.map */
