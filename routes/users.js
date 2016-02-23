@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var db = require('monk')(process.env.MONGOLAB_URI);
+var db = require('monk')('localhost/guests');
 var rsvp = db.get('rsvp');
 
 /* GET users listing. */
