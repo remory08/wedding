@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/guests');
+mongoose.connect(process.env.MONGOLAB_URI);
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
