@@ -1,7 +1,24 @@
 var express = require('express');
 var router = express.Router();
-var db = require('monk')(process.env.MONGOLAB_URI);
-var rsvp = db.get('rsvp');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/guests');
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log('we are connected');
+});
+
+var Schema = mongoose.Schema;
+var rsvpSchema = mongoose.Schema({
+    firstName: String,
+    lastName: String,
+    fullName: String,
+    rehearsalDinner: Boolean,
+    wedding: Boolean
+});
+
+var Guest = mongoose.model('Guest', rsvpSchema);
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -10,26 +27,32 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next ) {
   var guest = req.body;
-  guest.guest_full_name = req.body.guest_first_name + " "+  req.body.guest_last_name;
-  rsvp.findOne({guest_full_name: guest.guest_full_name}, function (err, doc) {
-    if (err) throw err;
-    if (doc) {
-      console.log(doc);
-      res.render('guest', {guest: doc})
+  guest.fullName = req.body.firstName + " "+  req.body.lastName;
+  console.log(guest);
+  Guest.findOne({ 'fullName': guest.fullName }, 'firstName lastName fullName rehearsalDinner wedding', function (err, found) {
+    if (err) return handleError(err);
+    if (found) {
+      console.log(found.fullName + ' was found in the database!');
+      res.render('guest', {guest: found})
     } else {
       console.log('no doc! let us insert it now');
-      rsvp.insert(guest, function (err, guest) {
-        if (err) throw err;
-      })
-      res.render('yay', {guest: guest})
+      var newGuest = new Guest({ firstName: guest.firstName, lastName: guest.lastName, fullName: guest.fullName, rehearsalDinner: guest.rehearsalDinner, wedding: guest.wedding });
+      newGuest.save(function (err, newGuest) {
+        if (err) return console.error(err);
+      });
     }
+    // console.log('%s %s is a %s.', guest.firstName, guest.lastName, guest.rehearsalDinner, guest.wedding) // Space Ghost is a talk show host.
+    res.render('yay', {guest: guest})
   })
 })
 
+
+
 router.get('/all', function (req, res, next) {
-  rsvp.find({}, function (err, docs) {
-    console.log(docs);
-    res.render('all', {guests: docs})
+  Guest.find(function (err, guests) {
+    if (err) return console.error(err);
+    console.log(guests);
+    res.render('all', {guests: guests})
   })
 })
 
