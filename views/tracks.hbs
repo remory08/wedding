@@ -1,0 +1,51 @@
+<a href="/" class="rsvp"><i class="fa fa-arrow-left"></i></a>
+<h1 class="songs">Search for tracks by keyword</h1>
+<form class="trackQuery" action="/songs/searchTrack" method="get">
+<input type="text" name="trackQuery" id="trackQuery">
+<input type="submit" value="Get Tracks">
+</form>
+
+<h1 class="songs">Search for tracks by artist</h1>
+<form class="artistTrackQuery" action="/songs/searchArtistTracks" method="get">
+<input type="text" name="artistTrackQuery" id="artistTrackQuery">
+<input type="submit" value="Get Tracks">
+</form>
+
+{{#if tracks}}
+<h2 class="songs">Click a track to hear a preview:</h2>
+<br>
+<br>
+<br>
+    {{#each tracks}}
+      <div class="container">
+        <a href="{{preview_url}}" target="_blank">
+          <img class="songs" src="{{album.images.1.url}}" alt="" />
+        </a>
+          <p class="first">{{name}}</p>
+          <p>by: {{#each artists}} {{name}} {{/each}} </p>
+          <p>on:  {{album.name}}</p>
+      </div>
+    {{/each}}
+
+{{/if}}
+
+{{#if aTracks}}
+<h2 class="songs">Here are your tracks:</h2>
+<br>
+<br>
+<br>
+    {{#each aTracks}}
+      <div class="container">
+        <a href="{{preview_url}}" target="_blank">
+          <img class="songs" src="{{album.images.1.url}}" alt="" />
+        </a>
+        <p class="first">{{name}}</p>
+        <p>Album: {{album.name}}</p>
+        <p>by:
+          {{#each artists}}
+            {{name}}
+          {{/each}}
+        </p>
+        </div>
+    {{/each}}
+{{/if}}
