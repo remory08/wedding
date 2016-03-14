@@ -42,9 +42,9 @@ router.post('/', function(req, res, next ) {
       newGuest.save(function (err, newGuest) {
         if (err) return console.error(err);
       });
+      res.render('yay', {guest: guest})
     }
     // console.log('%s %s is a %s.', guest.firstName, guest.lastName, guest.rehearsalDinner, guest.wedding) // Space Ghost is a talk show host.
-    res.render('yay', {guest: guest})
   })
 })
 
