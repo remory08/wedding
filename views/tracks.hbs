@@ -1,18 +1,30 @@
-<a href="/" class="rsvp"><i class="fa fa-arrow-left"></i></a>
-<h1 class="songs">Search for tracks by keyword</h1>
+<header>
+  <div class="veil">
+    <a href="/" class="left"><i class="fa fa-arrow-left"></i></a>
+    <h1>Request a song</h1>
+  </div>
+</header>
+<img class="field" src="/images/flower-field.jpg" alt="flower-field" />
+<div class="field">
+  <p class="songs"><i class="fa fa-hand-peace-o"></i>  Our wedding is a little less traditional.</p>
+  <p class="songs"><i class="fa fa-hand-peace-o"></i>  We will not be having a DJ, but will be having a kick-ass dance party.</p>
+  <p class="songs"><i class="fa fa-hand-peace-o"></i>   Tell us what you want to boogie to and we'll try to include it.</p>
+</div>
+<h2 class="songs">Search for tracks by keyword</h2>
 <form class="trackQuery" action="/songs/searchTrack" method="get">
 <input type="text" name="trackQuery" id="trackQuery">
 <input type="submit" value="Get Tracks">
 </form>
 
-<h1 class="songs">Search for tracks by artist</h1>
+<h2 class="songs">Search for tracks by artist</h2>
 <form class="artistTrackQuery" action="/songs/searchArtistTracks" method="get">
 <input type="text" name="artistTrackQuery" id="artistTrackQuery">
 <input type="submit" value="Get Tracks">
 </form>
 
 {{#if tracks}}
-<h2 class="songs">Click a track to hear a preview:</h2>
+<h3 class="songs">Click a track to hear a preview:</h3>
+<h3 class="songs">If you find a track you want us to play, click "Request"</h3>
 <br>
 <br>
 <br>
@@ -24,6 +36,12 @@
           <p class="first">{{name}}</p>
           <p>by: {{#each artists}} {{name}} {{/each}} </p>
           <p>on:  {{album.name}}</p>
+          <form class="request" action="/songs/request" method="post">
+            <input type="text" name="songId" value="{{id}}" hidden>
+            <input type="text" name="songName" value="{{name}}" hidden>
+            <input type="text" name="songLink" value="{{href}}" hidden>
+            <input type="submit" name="requestSong" value="Request">
+          </form>
       </div>
     {{/each}}
 
@@ -46,6 +64,12 @@
             {{name}}
           {{/each}}
         </p>
+        <form class="request" action="/songs/request" method="post">
+          <input type="text" name="songId" value="{{id}}" hidden>
+          <input type="text" name="songName" value="{{name}}" hidden>
+          <input type="text" name="songLink" value="{{href}}" hidden>
+          <input type="submit" name="requestSong" value="Request">
+        </form>
         </div>
     {{/each}}
 {{/if}}
