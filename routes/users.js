@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_URI);
+var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
+                replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } };
+mongoose.connect(process.env.MONGOLAB_URI, options);
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
