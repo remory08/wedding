@@ -2,13 +2,17 @@ var express = require('express');
 var router = express.Router();
 var SpotifyWebApi = require('spotify-web-api-node');
 var mongoose = require('mongoose');
-// mongoose.connect(process.env.MONGOLAB_URI);
-// var db = mongoose.connection;
+//var dbal = require('../middlewares/db.js');
+var db = mongoose.connection;
 
 var songSchema = mongoose.Schema({
   songID: String,
   songName: String,
-  songLink: String
+  songLink: String,
+  songUri: String,
+  songArtists: Array,
+  songLead: String,
+  songPreview: String,
 });
 
 var Song = mongoose.model('Song', songSchema);
@@ -17,7 +21,7 @@ var Song = mongoose.model('Song', songSchema);
 var spotifyApi = new SpotifyWebApi({
   clientId : process.env.SPOTIFY_ID,
   clientSecret : process.env.SPOTIFY_SECRET,
-  redirectUri : 'http://localhost:3000/callback'
+  redirectUri : process.env.REDIRECT_URI
 });
 
 /* GET songs page. */
@@ -47,18 +51,17 @@ router.get('/searchArtistTracks', function(req,res,next) {
 
 router.post('/request', function(req, res, next) {
   var song = req.body
-  Song.findOne({'songName': song.songName }, 'songName songId songLink', function (err, found) {
+  Song.findOne({'songName': song.songName }, 'songName songId songLink songUri songArtists songPreview', function (err, found) {
     if (err) return handleError(err);
     if (found) {
       console.log(found.songName + ' was found in the database!');
       res.render('yay', {song: found})
     } else {
       console.log('no doc! let us insert it now');
-      var newSong = new Song({ songName: song.songName, songId: song.songId, songLink: song.songLink });
+      var newSong = new Song({ songName: song.songName, songId: song.songId, songLink: song.songLink, songUri: song.songUri, songPreview: song.songPreview, songArtists: song.songArtists, songLead: song.songLead });
       newSong.save(function (err, newSong) {
         if (err) return console.error(err);
       });
-
     }
       res.render('yay', {song: song})
   })

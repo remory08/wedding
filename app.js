@@ -9,7 +9,9 @@ var dotenv = require('dotenv').load();
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var songs = require('./routes/songs');
+var mongoose = require('mongoose');
 
+mongoose.connect(process.env.MONGOLAB_URI);
 var app = express();
 
 // view engine setup
