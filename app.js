@@ -8,7 +8,10 @@ var dotenv = require('dotenv').load();
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var songs = require('./routes/songs');
+var mongoose = require('mongoose');
 
+mongoose.connect(process.env.MONGOLAB_URI);
 var app = express();
 
 // view engine setup
@@ -25,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/songs', songs);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

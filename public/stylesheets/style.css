@@ -292,9 +292,11 @@ i {
     border: none; }
     .yay button a:hover {
       color: white; }
+
 .yay h1 {
   color: black;
   margin-bottom: 20px; }
+
 .yay i {
   color: black;
   float: left; }
@@ -376,8 +378,8 @@ html, body {
   overflow-x: hidden; }
 
 body {
- /*   padding: 50px;
-*/
+  /*   padding: 50px;
+ */
   background-color: rgba(255, 255, 255, 0.5);
   color: white;
   text-align: center;
@@ -447,4 +449,62 @@ td {
 th {
   font-size: 24px; }
 
-/*# sourceMappingURL=style.css.map */
+.container {
+  float: left;
+  width: 30%;
+  height: 500px;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  background-color: rgba(81, 94, 7, 0.7); }
+  .container p {
+    font-size: 22px;
+    margin-top: 10px; }
+    .container p.first {
+      color: black;
+      text-shadow: grey 1px 1px 2px;
+      font-weight: 800; }
+
+.container img {
+  width: 100%; }
+
+h1.songs {
+  color: black;
+  margin-bottom: 20px; }
+
+h2.songs {
+  clear: both;
+  color: green; }
+  h2.songs:first-of-type {
+    margin-top: 5%; }
+
+h3.songs, p.songs {
+  color: purple;
+  margin-bottom: 2%;
+  font-size: 20px; }
+
+p.songs {
+  text-align: left;
+  padding-left: 3%;
+  line-height: 2;
+  margin: 8% 0; }
+  p.songs:first-of-type {
+    margin-top: 3%; }
+
+img.songs {
+  height: 371px; }
+
+img.field {
+  width: 50%;
+  float: left; }
+
+div.field {
+  width: 50%;
+  float: left; }
+
+.yay img {
+  width: 30%;
+  margin-top: 5%;
+  margin-bottom: 3%; }
+
+.yay p {
+  margin-bottom: 3%; }

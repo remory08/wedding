@@ -30,7 +30,6 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next ) {
   var guest = req.body;
   guest.fullName = req.body.firstName + " "+  req.body.lastName;
-  console.log(guest);
   Guest.findOne({ 'fullName': guest.fullName }, 'firstName lastName fullName rehearsalDinner wedding', function (err, found) {
     if (err) return handleError(err);
     if (found) {
@@ -48,8 +47,6 @@ router.post('/', function(req, res, next ) {
   })
 })
 
-
-
 router.get('/all', function (req, res, next) {
   Guest.find(function (err, guests) {
     if (err) return console.error(err);
@@ -57,7 +54,5 @@ router.get('/all', function (req, res, next) {
     res.render('all', {guests: guests})
   })
 })
-
-
 
 module.exports = router;
