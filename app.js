@@ -10,8 +10,11 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var songs = require('./routes/songs');
 var mongoose = require('mongoose');
+var mongoose = require('mongoose');
+var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
+                replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } };
+mongoose.connect(process.env.MONGOLAB_URI, options);
 
-mongoose.connect(process.env.MONGOLAB_URI);
 var app = express();
 
 // view engine setup
