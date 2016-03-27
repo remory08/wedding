@@ -126,12 +126,20 @@ form.rsvp {
   font-weight: bold; }
 
 .cabins {
-  width: 60%;
-  float: left; }
+  width: 90%;
+  margin-left: 5%; }
 
 .avalanche {
-  width: 40%;
-  float: left; }
+  width: 100%;
+  margin-top: 10%; }
+
+@media (min-width: 850px) {
+  .avalanche {
+    width: 40%;
+    float: left; }
+  .cabins {
+    width: 60%;
+    float: left; } }
 
 /* Things To Do Styles */
 .ttd h5 {
@@ -425,6 +433,14 @@ p {
   text-shadow: white 1px 1px;
   color: #a53f92; }
 
+h3 i {
+  /*   float: left;
+ */
+  padding-left: 5%; }
+
+i {
+  color: #00B7FF; }
+
 *, *:before, *:after {
   box-sizing: inherit; }
 
@@ -524,7 +540,7 @@ th {
   top: 112px; }
 
 @media (min-width: 850px) {
-  .ptarmigan {
+  .ptarmigan, header {
     background: url(../images/ptarmigan.jpg) no-repeat center center fixed; }
   .timbutt {
     background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed; }

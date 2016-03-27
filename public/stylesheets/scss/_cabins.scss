@@ -15,11 +15,22 @@
 }
 
 .cabins {
-	width: 60%;
-	float: left;
+	width: 90%;
+	margin-left: 5%;
 }
 
 .avalanche {
-	width: 40%;
-	float: left;
+	width: 100%;
+	margin-top: 10%;
+}
+
+@media (min-width: 850px) {
+	.avalanche {
+		width: 40%;
+		float: left;
+	}
+	.cabins {
+		width: 60%;
+		float: left;
+	}
 }
