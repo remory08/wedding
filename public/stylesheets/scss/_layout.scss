@@ -106,3 +106,15 @@ th {
   position: relative;
   top: 112px;
 }
+
+@media (min-width: 850px) {
+  .ptarmigan {
+    background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
+  }
+  .timbutt {
+  	background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed;
+  }
+  h1, .megatron, .pooch {
+    color: white;
+  }
+}
