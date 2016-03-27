@@ -81,20 +81,24 @@ form.rsvp {
     border-radius: 0;
     color: black;
     display: inline-block;
-    width: 40%;
+    width: 100%;
     text-align: left;
-    border-bottom: 2px solid black; }
+    border-bottom: 2px solid black;
+    font-size: 20px; }
   form.rsvp input[type='submit'] {
     background-color: #bf58ac;
     font-size: 20px;
     text-align: center;
-    border: none; }
+    border: none;
+    margin-left: 0; }
     form.rsvp input[type='submit']:hover {
       background-color: #00B7FF;
       color: white; }
+  form.rsvp input[type='checkbox'] {
+    margin-left: 45%; }
   form.rsvp label, form.rsvp .guest_form label {
     color: black;
-    font-size: 18px; }
+    font-size: 20px; }
   form.rsvp h3 {
     color: black;
     font-weight: bold;
