@@ -2,7 +2,6 @@
   box-sizing: inherit;
 }
 
-
 html {
   box-sizing: border-box;
 	letter-spacing: 2px;
@@ -30,39 +29,44 @@ header {
 
 section {
 	clear: both;
-	margin-bottom: 50px;
 }
 
 /* Brown Section of Navigation Items */
-.brown p {
-  margin: 30px 20px;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: left;
-  line-height: 2.0;
-  text-indent: 30px hanging;
-}
-
 .brown {
   background-color: rgb(103, 95, 77);
-  padding: 100px;
   width: 100%;
-	position: relative;
-	top: 168px;
+  padding: 10px 0;
+/* 	position: relative;
+ *//* 	top: 168px;
+ */  p {
+/*     margin: 30px 20px;
+ */    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 2.0;
+    text-indent: 30px hanging;
+  }
+  nav {
+    a{
+      display: block;
+      margin: 25px;
+    }
+  }
 }
 
 .timbutt {
+  clear: both;
 	background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed;
   width: 100%;
-	height: 600px;
-	margin-bottom: 0;
+  height: 600px;
+  margin-bottom: 0;
 }
 
 .ptarmigan {
 	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
   width: 100%;
-	height: 1000px;
-}
+/* 	height: 1000px;
+ */}
 
 .veil {
 	background-color: rgba(255,255,255,0.5);
@@ -95,4 +99,10 @@ td {
 
 th {
 	font-size: 24px;
+}
+
+.pooch {
+  height: 300px;
+  position: relative;
+  top: 112px;
 }

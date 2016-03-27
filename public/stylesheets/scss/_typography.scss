@@ -18,14 +18,13 @@ h4 {
 a {
   color: white;
   font-weight: 800;
-  text-decoration: none;
-  border-bottom: 2px solid white;
-  }
+/*   border-bottom: 2px solid white;
+ */  }
 
 a:hover {
   color: #00B7FF;
-  border-bottom: 2px solid #00B7FF;
-}
+/*   border-bottom: 2px solid #00B7FF;
+ */}
 
 nav a {
 	font-size: 20px;
@@ -34,9 +33,9 @@ nav a {
 }
 
 p {
-  font-size: 30px;
   font-weight: 400;
   color: white;
+  font-size: 20px;
 }
 
 .pooch {
