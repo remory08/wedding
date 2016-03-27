@@ -263,26 +263,39 @@ margin-left: 2%; */
     border: none;
     width: 70%;
     float: right;
+    margin-right: 15%;
+    margin-bottom: 10%;
     display: inline-block; }
-  section.brown {
-    display: inline-block;
-    width: 25%;
-    margin-top: -46px;
-    border-radius: 5px; }
-    section.brown nav {
-      display: inline-block; }
-      section.brown nav a {
-        display: inline-block;
-        line-height: 1.5;
-        text-decoration: none;
-        border-bottom: 2px solid white; }
-    section.brown:after {
-      clear: both; }
+    div#accordion.ui-accordian.ui-accordian.ui-widget.ui-helper-reset a {
+      color: white; }
+      div#accordion.ui-accordian.ui-accordian.ui-widget.ui-helper-reset a:hover {
+        color: #00B7FF; }
+  /* 	 section.brown {
+		 display: inline-block;
+		 width: 25%;
+		 margin-top: -46px;
+		 border-radius: 5px;
+		 nav{
+			 display: inline-block;
+			  a {
+				 display: inline-block;
+				 line-height: 1.5;
+				 text-decoration: none;
+				 border-bottom: 2px solid white;
+			 }
+	}
+		&:after {
+			clear: both;
+		}
+} */
   #ui-id-2 {
-    height: 70px !important; }
-    #ui-id-2 p {
-      width: 80%;
-      margin-left: 10%; } }
+    max-height: 70px !important; } }
+
+#ui-id-2 {
+  max-height: 142px !important; }
+  #ui-id-2 p {
+    width: 80%;
+    margin-left: 10%; }
 
 /* Hidden  All Page for checking RSVPs styles */
 .all p {
