@@ -137,10 +137,10 @@ form.rsvp {
   .avalanche {
     width: 40%;
     float: left; }
+
   .cabins {
     width: 60%;
     float: left; } }
-
 /* Things To Do Styles */
 .ttd h5 {
   font-size: 24px;
@@ -218,41 +218,41 @@ i {
   margin-top: -40px;
   width: 100%;
   /* 	float: left;
-margin-left: 2%; */
+  margin-left: 2%; */
   line-height: 1.5;
   /* 	border: 10px solid white;
- */
+   */
   border-radius: 5px;
   /* 	height: 250px; */
   background-color: rgba(81, 94, 7, 0.7);
   /* 	margin-bottom: 20px;
- */
+   */
   /* 	-webkit-transition: -webkit-transform 1s;
- -moz-transition: -moz-transform 1s;
- -o-transition: -o-transform 1s;
- transition: transform 1s;
- -webkit-transform-style: preserve-3d;
- -moz-transform-style: preserve-3d;
- -o-transform-style: preserve-3d;
- transform-style: preserve-3d;
- -webkit-transform-origin: 50% 50%;
- margin-bottom: 70px; */
+-moz-transition: -moz-transform 1s;
+-o-transition: -o-transform 1s;
+transition: transform 1s;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+-o-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-transform-origin: 50% 50%;
+margin-bottom: 70px; */
   /*  &.flipped {
-	    -webkit-transform: rotateY( 180deg );
-	    -moz-transform: rotateY( 180deg );
-	    -o-transform: rotateY( 180deg );
-	    transform: rotateY( 180deg );
-	}
-	.back {
-	    -webkit-transform: rotateY( 180deg );
-	    -moz-transform: rotateY( 180deg );
-	    -o-transform: rotateY( 180deg );
-	    transform: rotateY( 180deg );
-			-webkit-backface-visibility: hidden;
-		-moz-backface-visibility: hidden;
-		-o-backface-visibility: hidden;
-		backface-visibility: hidden;
-	} */ }
+      -webkit-transform: rotateY( 180deg );
+      -moz-transform: rotateY( 180deg );
+      -o-transform: rotateY( 180deg );
+      transform: rotateY( 180deg );
+  }
+  .back {
+      -webkit-transform: rotateY( 180deg );
+      -moz-transform: rotateY( 180deg );
+      -o-transform: rotateY( 180deg );
+      transform: rotateY( 180deg );
+  		-webkit-backface-visibility: hidden;
+  	-moz-backface-visibility: hidden;
+  	-o-backface-visibility: hidden;
+  	backface-visibility: hidden;
+  } */ }
   #accordion h3 {
     width: 100%;
     font-size: 36px;
@@ -273,6 +273,7 @@ margin-left: 2%; */
 @media (min-width: 850px) {
   section.ptarmigan, div.veil {
     overflow: auto; }
+
   div#accordion.ui-accordian.ui-accordian.ui-widget.ui-helper-reset {
     border: none;
     width: 70%;
@@ -284,27 +285,27 @@ margin-left: 2%; */
       color: white; }
       div#accordion.ui-accordian.ui-accordian.ui-widget.ui-helper-reset a:hover {
         color: #00B7FF; }
+
   /* 	 section.brown {
-		 display: inline-block;
-		 width: 25%;
-		 margin-top: -46px;
-		 border-radius: 5px;
-		 nav{
-			 display: inline-block;
-			  a {
-				 display: inline-block;
-				 line-height: 1.5;
-				 text-decoration: none;
-				 border-bottom: 2px solid white;
-			 }
-	}
-		&:after {
-			clear: both;
-		}
-} */
+  		 display: inline-block;
+  		 width: 25%;
+  		 margin-top: -46px;
+  		 border-radius: 5px;
+  		 nav{
+  			 display: inline-block;
+  			  a {
+  				 display: inline-block;
+  				 line-height: 1.5;
+  				 text-decoration: none;
+  				 border-bottom: 2px solid white;
+  			 }
+  	}
+  		&:after {
+  			clear: both;
+  		}
+  } */
   #ui-id-2 {
     max-height: 70px !important; } }
-
 #ui-id-2 {
   max-height: 142px !important; }
   #ui-id-2 p {
@@ -357,11 +358,9 @@ margin-left: 2%; */
     border: none; }
     .yay button a:hover {
       color: white; }
-
 .yay h1 {
   color: black;
   margin-bottom: 20px; }
-
 .yay i {
   color: black;
   float: left; }
@@ -376,7 +375,6 @@ margin-left: 2%; */
   width: 30%;
   margin-top: 5%;
   margin-bottom: 3%; }
-
 .yay p {
   margin-bottom: 3%; }
 
@@ -410,12 +408,12 @@ a {
   color: white;
   font-weight: 800;
   /*   border-bottom: 2px solid white;
- */ }
+   */ }
 
 a:hover {
   color: #00B7FF;
   /*   border-bottom: 2px solid #00B7FF;
- */ }
+   */ }
 
 nav a {
   font-size: 20px;
@@ -433,7 +431,7 @@ p {
   font-size: 30px;
   font-weight: 800;
   /* 	color: darken(#bf58ac, 10%);
- */
+   */
   position: relative;
   color: #bf58ac;
   top: -50px; }
@@ -446,7 +444,7 @@ p {
 
 h3 i {
   /*   float: left;
- */
+   */
   padding-left: 5%;
   color: rgba(81, 94, 7, 0.7); }
 
@@ -466,8 +464,8 @@ html, body {
   overflow-x: hidden; }
 
 body {
-  /*   padding: 50px;
- */
+ /*   padding: 50px;
+*/
   background-color: rgba(255, 255, 255, 0.5);
   color: white;
   text-align: center;
@@ -476,7 +474,7 @@ body {
 
 header {
   /* 	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
- */
+   */
   width: 100%;
   height: 100px; }
 
@@ -489,12 +487,12 @@ section {
   width: 100%;
   padding: 10px 0;
   /* 	position: relative;
- */
+   */
   /* 	top: 168px;
- */ }
+*/ }
   .brown p {
     /*     margin: 30px 20px;
- */
+     */
     font-size: 18px;
     font-weight: 500;
     text-align: left;
@@ -507,17 +505,17 @@ section {
 .timbutt {
   clear: both;
   /* 	background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed;
- */
+   */
   width: 100%;
   height: 600px;
   margin-bottom: 0; }
 
 .ptarmigan {
   /* 	background: url(../images/ptarmigan.jpg) no-repeat center center fixed;
- */
+   */
   width: 100%;
   /* 	height: 1000px;
- */ }
+   */ }
 
 .veil {
   background-color: rgba(255, 255, 255, 0.5);
@@ -554,11 +552,15 @@ th {
 @media (min-width: 850px) {
   .ptarmigan, header {
     background: url(../images/ptarmigan.jpg) no-repeat center center fixed; }
+
+  header i {
+    color: white; }
+
   .timbutt {
     background: url(../images/timbosontopoftheworldhey.jpg) no-repeat center center fixed; }
+
   h1, .megatron, .pooch {
     color: white; } }
-
 img.field {
   width: 100%;
   margin-top: 15%; }
@@ -567,7 +569,6 @@ div.field p, div.field i {
   color: purple;
   text-align: left;
   line-height: 1.5; }
-
 div.field p {
   width: 90%;
   margin-left: 5%;
@@ -581,58 +582,76 @@ div.container {
   div.container img {
     width: 100%; }
 
-h3.songs {
-  color: #515e07;
-  font-size: 24px;
-  line-height: 1.5; }
-
-p.songs {
-  color: purple;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 700; }
+div.results {
+  clear: both;
+  margin-bottom: 2%;
+  padding: 2%;
+  background-color: rgba(81, 94, 7, 0.7); }
+  div.results h3 {
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 700; }
+  div.results p {
+    color: #ffdf33;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700; }
 
 @media (min-width: 850px) {
-  .container {
+  div.container {
     float: left;
     width: 30%;
     height: 500px;
+    margin-top: 0;
     margin-left: 3%;
     margin-bottom: 5%;
     background-color: rgba(81, 94, 7, 0.7); }
-    .container p {
+    div.container p {
       font-size: 22px;
       margin-top: 10px; }
-      .container p.first {
+      div.container p.first {
         color: black;
         text-shadow: gray 1px 1px 2px;
         font-weight: 800; }
+
   .container img {
     width: 100%; }
+
   h1.songs {
     color: black;
     margin-bottom: 20px; }
+
   h2.songs {
     clear: both;
     color: green; }
     h2.songs:first-of-type {
       margin-top: 5%; }
+
   h3.songs, p.songs {
     color: purple;
     margin-bottom: 2%;
     font-size: 20px; }
+
   p.songs {
     text-align: left;
     padding-left: 3%;
     line-height: 2;
-    margin: 8% 0; }
-    p.songs:first-of-type {
-      margin-top: 3%; }
+    text-align: center; }
+
   img.songs {
     height: 371px; }
+
   img.field {
     width: 50%;
-    float: left; }
+    float: left;
+    margin-top: 0; }
+
   div.field {
     width: 50%;
-    float: left; } }
+    float: left; }
+
+  i.fa-arrow-left {
+    color: white; } }
+
+/*# sourceMappingURL=style.css.map */

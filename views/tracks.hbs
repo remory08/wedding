@@ -6,28 +6,16 @@
 </header>
 <img class="field" src="/images/flower-field.jpg" alt="flower-field" />
 <div class="field">
-  <p class="songs"><i class="fa fa-hand-peace-o"></i>  Our wedding is a little less traditional.</p>
+  <p class="songs"><i class="fa fa-hand-peace-o"></i>  Our wedding is a non-traditional.</p>
   <p class="songs"><i class="fa fa-hand-peace-o"></i>  We will not be having a DJ, but will be having a kick-ass dance party.</p>
   <p class="songs"><i class="fa fa-hand-peace-o"></i>   Tell us what you want to boogie to and we'll try to include it.</p>
 </div>
-<h2 class="songs">Search for tracks by keyword</h2>
-<form class="trackQuery" action="/songs/searchTrack" method="get">
-<input type="text" name="trackQuery" id="trackQuery">
-<input type="submit" value="Get Tracks">
-</form>
-
-<h2 class="songs">Search for tracks by artist</h2>
-<form class="artistTrackQuery" action="/songs/searchArtistTracks" method="get">
-<input type="text" name="artistTrackQuery" id="artistTrackQuery">
-<input type="submit" value="Get Tracks">
-</form>
-
 {{#if tracks}}
-<h3 class="songs">Click an Album Cover to hear a preview.</h3>
-<p class="songs">If you find a track you want us to play, click "Request"</p>
-<br>
-<br>
-<br>
+
+<div class="results">
+<h3>Click an Album Cover to hear a preview.</h3>
+<p>If you find a track you want us to play, click "Request"</p>
+</div>
     {{#each tracks}}
       <div class="container">
         <a href="{{preview_url}}" target="_blank">
@@ -52,9 +40,6 @@
 
 {{#if aTracks}}
 <h2 class="songs">Here are your tracks:</h2>
-<br>
-<br>
-<br>
     {{#each aTracks}}
       <div class="container">
         <a href="{{preview_url}}" target="_blank">
@@ -79,3 +64,15 @@
         </div>
     {{/each}}
 {{/if}}
+
+<h2 class="songs">Search for tracks by keyword</h2>
+<form class="trackQuery" action="/songs/searchTrack" method="get">
+<input type="text" name="trackQuery" id="trackQuery">
+<input type="submit" value="Get Tracks">
+</form>
+
+<h2 class="songs">Search for tracks by artist</h2>
+<form class="artistTrackQuery" action="/songs/searchArtistTracks" method="get">
+<input type="text" name="artistTrackQuery" id="artistTrackQuery">
+<input type="submit" value="Get Tracks">
+</form>
