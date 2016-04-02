@@ -31,6 +31,7 @@ i {
 	margin: 10px 0;
 }
 
+
 /* 	margin-bottom: 20px;
  *//* 	-webkit-transition: -webkit-transform 1s;
  -moz-transition: -moz-transform 1s;
@@ -95,6 +96,8 @@ i {
 			clear: both;
 		}
 } */
+
+//Information Card
 	 #ui-id-2 {
 		 max-height: 70px !important;
 	 }
@@ -106,4 +109,19 @@ i {
 		 width: 80%;
 		 margin-left: 10%;
 	 }
+ }
+
+//Welcome Dinner Card
+ #ui-id-4 {
+	 height: 450px;
+ }
+
+ //RSVP Card and Dancing Card
+#ui-id-8, #ui-id-10 {
+	 max-height: 220px !important;
+ }
+
+// Nuptials Card
+ #ui-id-6 {
+	 max-height: 293px !important;
  }
