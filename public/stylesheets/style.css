@@ -120,6 +120,8 @@ form.rsvp {
   font-size: 20px;
   line-height: 1.7;
   font-weight: bold; }
+  .cabins p i {
+    color: #00B7FF; }
 
 .cabins a {
   color: #bf58ac;
@@ -134,11 +136,14 @@ form.rsvp {
   margin-top: 10%; }
 
 @media (min-width: 850px) {
-  .avalanche {
+  img.avalanche {
     width: 40%;
-    float: left; }
+    float: left;
+    margin-top: 0; }
 
-  .cabins {
+  section.cabins {
+    clear: none;
+    margin-left: 0 !important;
     width: 60%;
     float: left; } }
 /* Things To Do Styles */
